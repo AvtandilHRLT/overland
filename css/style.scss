@@ -125,12 +125,12 @@ $white_ff: #ffffff;
                         border: 1px solid #000;
                         color: #04244D;
                         &::after{
+                            content: '';
                             position: absolute;
+                            z-index: 1;
                             width: 140%;
                             background: #A2C2C6;
                             height: 15px;
-                            content: '';
-                            z-index: 1;
                             left: -20%;
                             bottom: 20%;
                             display: block;

@@ -114,12 +114,12 @@
   color: #04244D;
 }
 .a__mental .a__mental__container .a__mental-items .a__mental-item .a__mental-sub-item .mental__h3::after {
+  content: "";
   position: absolute;
+  z-index: 1;
   width: 140%;
   background: #A2C2C6;
   height: 15px;
-  content: "";
-  z-index: 1;
   left: -20%;
   bottom: 20%;
   display: block;
