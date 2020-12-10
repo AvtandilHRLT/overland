@@ -30,11 +30,12 @@ $white_ff: #ffffff;
 }
 
 //////////about-us
-.a__about-us {
-    margin-bottom: 100px;
-    .a__about-us__container {
+.a__about__container {
 
-        .a__about-us-items {
+    margin-bottom: 100px;
+    .a__about{
+
+        .a__about__items {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -42,7 +43,7 @@ $white_ff: #ffffff;
                 flex-direction: column;
                 align-items: center;
             }
-            .a__about-us-item {
+            .a__about__item {
                 >p{
                     font-family: $Mont;
                     font-style: normal;
@@ -87,68 +88,64 @@ $white_ff: #ffffff;
 //////end about-us
 
 ////////////mental
-.a__mental{
+.a__mental__container {
     
-    .a__mental__container {
+    .a__mental{
 
-
-        .a__mental-items {
+        .a__mental__items {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            .a__mental-item {
+            .a__mental__item {
                 width: 31%;
                 min-height: 420px;
                 border: 1px solid #000;
                 margin-bottom: 30px;
                 background: $white_ff;
                 box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
-                .a__mental-sub-item {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-bottom: 25px;
-                    .mental__img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 25px;
+                .mental__img {
 
-                    }
-                   
-                    .mental__h3 {
-                        position: relative;
-                        z-index: 2;
-                        margin: 25px 0;
-                        font-family: $Mont;
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 27px;
-                        line-height: 33px;
-                        border: 1px solid #000;
-                        color: #04244D;
-                        &::after{
-                            content: '';
-                            position: absolute;
-                            z-index: 1;
-                            width: 140%;
-                            background: #A2C2C6;
-                            height: 15px;
-                            left: -20%;
-                            bottom: 20%;
-                            display: block;
-
-                        }
-                    }
-                    >p{
-                        padding: 0 28px;
-                        font-family: $Mont;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 130%;
-                        text-align: justify;
-                        letter-spacing: 0.05em;
-                        color: $black_00;
+                }
+                
+                .mental__h3 {
+                    position: relative;
+                    z-index: 2;
+                    margin: 25px 0;
+                    font-family: $Mont;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 27px;
+                    line-height: 33px;
+                    color: #04244D;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        z-index: -1;
+                        width: 140%;
+                        background: #A2C2C6;
+                        height: 15px;
+                        left: -20%;
+                        top: 50%;
+                        display: block;
                     }
                 }
+                >p{
+                    padding: 0 28px;
+                    font-family: $Mont;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 130%;
+                    text-align: justify;
+                    letter-spacing: 0.05em;
+                    color: $black_00;
+                }
+                
             }
         }
     }

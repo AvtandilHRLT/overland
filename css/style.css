@@ -19,21 +19,21 @@
   font-weight: 700;
 }
 
-.a__about-us {
+.a__about__container {
   margin-bottom: 100px;
 }
-.a__about-us .a__about-us__container .a__about-us-items {
+.a__about__container .a__about .a__about__items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 991px) {
-  .a__about-us .a__about-us__container .a__about-us-items {
+  .a__about__container .a__about .a__about__items {
     flex-direction: column;
     align-items: center;
   }
 }
-.a__about-us .a__about-us__container .a__about-us-items .a__about-us-item > p {
+.a__about__container .a__about .a__about__items .a__about__item > p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -43,65 +43,63 @@
   margin-bottom: 10px;
 }
 @media (max-width: 767px) {
-  .a__about-us .a__about-us__container .a__about-us-items .a__about-us-item > p {
+  .a__about__container .a__about .a__about__items .a__about__item > p {
     font-size: 12px;
     line-height: 14.63px;
   }
 }
 @media (max-width: 991px) {
-  .a__about-us .a__about-us__container .a__about-us-items .a__about-us-item {
+  .a__about__container .a__about .a__about__items .a__about__item {
     width: 100%;
   }
 }
-.a__about-us .a__about-us__container .a__about-us-items > .about-left {
+.a__about__container .a__about .a__about__items > .about-left {
   width: 39%;
 }
 @media (max-width: 991px) {
-  .a__about-us .a__about-us__container .a__about-us-items > .about-left {
+  .a__about__container .a__about .a__about__items > .about-left {
     width: 100%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
-  .a__about-us .a__about-us__container .a__about-us-items > .about-left {
+  .a__about__container .a__about .a__about__items > .about-left {
     margin-bottom: 10px;
   }
 }
-.a__about-us .a__about-us__container .a__about-us-items > .about-right {
+.a__about__container .a__about .a__about__items > .about-right {
   width: 59%;
 }
-.a__about-us .a__about-us__container .a__about-us-items > .about-right img {
+.a__about__container .a__about .a__about__items > .about-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 @media (max-width: 991px) {
-  .a__about-us .a__about-us__container .a__about-us-items > .about-right {
+  .a__about__container .a__about .a__about__items > .about-right {
     width: 100%;
   }
 }
 
-.a__mental .a__mental__container .a__mental-items {
+.a__mental__container .a__mental .a__mental__items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.a__mental .a__mental__container .a__mental-items .a__mental-item {
+.a__mental__container .a__mental .a__mental__items .a__mental__item {
   width: 31%;
   min-height: 420px;
   border: 1px solid #000;
   margin-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
-}
-.a__mental .a__mental__container .a__mental-items .a__mental-item .a__mental-sub-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 25px;
 }
-.a__mental .a__mental__container .a__mental-items .a__mental-item .a__mental-sub-item .mental__h3 {
+.a__mental__container .a__mental .a__mental__items .a__mental__item .mental__h3 {
   position: relative;
   z-index: 2;
   margin: 25px 0;
@@ -110,21 +108,20 @@
   font-weight: 600;
   font-size: 27px;
   line-height: 33px;
-  border: 1px solid #000;
   color: #04244D;
 }
-.a__mental .a__mental__container .a__mental-items .a__mental-item .a__mental-sub-item .mental__h3::after {
+.a__mental__container .a__mental .a__mental__items .a__mental__item .mental__h3::before {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   width: 140%;
   background: #A2C2C6;
   height: 15px;
   left: -20%;
-  bottom: 20%;
+  top: 50%;
   display: block;
 }
-.a__mental .a__mental__container .a__mental-items .a__mental-item .a__mental-sub-item > p {
+.a__mental__container .a__mental .a__mental__items .a__mental__item > p {
   padding: 0 28px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
